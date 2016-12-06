@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Telegram Bot Sender</title>
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<h1>Easy sending messages to your bot users</h1>
+			<p>App suports markdown and emodji</p>
+			<div id="result"></div>
+			Message: <textarea class="message" type="text" id="message"  rows="4" cols="150" required></textarea>
+			<input type="submit" value="Send!" id="send"><br><br>
+			<span>Some settings:</span><br><br>
+			Put token of your bot here: <input type="text" id="token"><br>
+			Chat id/ids who receive the message, a new line each: <textarea class="chatId" type="text" id="chatId"></textarea>
+		</div>
+	</div>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>

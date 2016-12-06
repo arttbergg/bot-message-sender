@@ -1,0 +1,58 @@
+* {
+	margin: 0; padding: 0;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+body {
+	background: #eee url(grey-texture.jpg);
+}
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #434343;
+	text-align: center;
+	font-size: 24px;
+	padding: 15px 0 24px;
+}
+.red, .green {
+	display: block;
+	margin: 0 0 20px;
+}
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+input, textarea {
+	border: 1px solid #eee;
+	outline: 0;
+	padding: 6px;
+	width: 100%;
+	margin-bottom: 25px;
+}
+#send {
+	background: #555591;
+	color: #fff;
+	border-radius: 6px;
+}
+.message {
+	height: 90px;
+	border: 1px solid #a7c6ef;
+}
+.chatId {
+	min-height: 50px;
+}
+.container {
+	width: 460px;
+	margin: 24px auto 0;
+	padding: 25px 65px;
+	border: 1px dotted #eee;
+	border-radius: 15px;
+	background: #fff;
+}
+
+.form p {
+	color: #b2b2b2;
+	text-align: center;
+	margin-bottom: 8px;
+}
