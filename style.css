@@ -17,12 +17,6 @@ h1 {
 	display: block;
 	margin: 0 0 20px;
 }
-.red {
-	color: red;
-}
-.green {
-	color: green;
-}
 input, textarea {
 	border: 1px solid #eee;
 	outline: 0;
@@ -55,4 +49,10 @@ input, textarea {
 	color: #b2b2b2;
 	text-align: center;
 	margin-bottom: 8px;
+}
+.form .red {
+	color: red;
+}
+.form .green {
+	color: green;
 }

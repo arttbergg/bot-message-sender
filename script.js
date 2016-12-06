@@ -5,7 +5,7 @@
 })()
 		
 function getAndSent() {
-	var token, chatId, message;
+	var token, chatId, message, chatIdSplit, xhr;
 	token = document.getElementById("token").value;
 	chatId = document.getElementById("chatId").value;
 	message = document.getElementById("message").value;
@@ -19,12 +19,12 @@ function getAndSent() {
 	// fix newline
 	message = message.replace(/(?:\r\n|\r|\n)/g, '%0A');
 	// split list of chatId to array
-	var chatIdSplit = chatId.split("\n");
+	chatIdSplit = chatId.split("\n");
 
 	// sending data to recipients
 	for (i = 0; i < chatIdSplit.length; i++) {
 		var url = "https://api.telegram.org/bot" + token + "/sendmessage?chat_id=" + chatIdSplit[i] + "&parse_mode=Markdown" + "&text=" + message;
-		var xhr = new XMLHttpRequest();
+		xhr = new XMLHttpRequest();
 		xhr.open('GET', url);
 		xhr.send();
 	}
