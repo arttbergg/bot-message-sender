@@ -1,4 +1,5 @@
 ## Description.
+App for Telegram.
 Simple way to send message to your bot users by IDs base.
 
 ## How to use
